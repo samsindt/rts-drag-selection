@@ -12,7 +12,7 @@ func _ready():
 	var margin = 50
 	for i in range(unit_count):
 		var x = randi_range(viewport_rect.position.x + margin, viewport_rect.position.x + viewport_rect.size.x - margin)
-		var y = randi_range(viewport_rect.position.y + margin, viewport_rect.position.y+ viewport_rect.size.y - margin)
+		var y = randi_range(viewport_rect.position.y + margin, viewport_rect.position.y + viewport_rect.size.y - margin)
 		var unit = unit_scene.instantiate()
 		unit.position = Vector2(x, y)
 		units.push_back(unit)
